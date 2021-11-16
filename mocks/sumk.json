@@ -1,0 +1,13 @@
+{
+  "error": true,
+  "result": {
+    "datadate": "2021-11-15",
+    "systemid": "FEM",
+    "plant": "WKS",
+    "actual": 0,
+    "target": 2,
+    "status": 0,
+    "cmpunitdesc": "使用次數",
+    "uploadtime": 1636905600000
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "error": true,
+  "result": {
+    "url": "http://localhost:4000",
+    "data": {
+      "evt_dt": 1636905600000,
+      "plant_code": "WKS-COMMON",
+      "system_id": "fem",
+      "type_id": "time_inspection",
+      "benefit_type": "direct",
+      "freq": "D",
+      "site": "WKS",
+      "company": "WSD",
+      "plant": "WKS-COMMON",
+      "params": [
+        { "name": "inspection_time", "value": 1, "type": "CONST" },
+        { "name": "frequency", "value": 4, "type": "CONST" },
+        { "name": "dl_pay_hr", "value": 21, "type": "VAR" }
+      ]
+    }
+  }
+}
