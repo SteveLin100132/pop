@@ -12,6 +12,7 @@
 import {
   BnftResponse,
   DmcResponse,
+  DsmResponse,
   PlatformKeyResponse,
   PlatformResponse,
   PlatformType,
@@ -56,7 +57,9 @@ export class PlatformResponseBuilder
       const plant = response.result.plant;
       key = `${key}.${plant}`;
     } else if (type === 'dsm') {
-      // TODO: 添加健康中心
+      const response: DsmResponse = this._response;
+      const plant = (response.result as { plant: string }).plant;
+      key = `${key}.${plant}`;
     }
     return { key, ...this._response };
   }

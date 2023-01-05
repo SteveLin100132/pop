@@ -36,3 +36,7 @@ export declare type SumkResponse = PlatformResponse<UsagePayload>;
  * 異常事件報警中心回傳結果型別
  */
 export declare type DmcResponse = PlatformResponse<AlarmModel>;
+/**
+ * 健康中心回傳結果型別
+ */
+export declare type DsmResponse = PlatformResponse<object>;
