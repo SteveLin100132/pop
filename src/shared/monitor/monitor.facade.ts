@@ -136,11 +136,11 @@ export class MonitorFacade implements MonitorTemplate<PlatformResponse> {
     this._schedule = Cron.scheduleJob(this.config.cron, () => {
       this.status.forEach((status, key) => {
         retry.publish(status, error => {
-          if (error) {
-            this._logger.error(key);
-            this._logger.error(error);
-          }
           this._logger.info(key, JSON.stringify(status));
+          if (error) {
+            this._logger.error(error);
+            return;
+          }
           status.reset();
         });
       });
